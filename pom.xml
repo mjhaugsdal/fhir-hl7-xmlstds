@@ -20,8 +20,40 @@
         <jaxb-impl.version>4.0.3</jaxb-impl.version>
     </properties>
 
-    <dependencies>
+    <name>fhir-hl7-xmlstds</name>
+    <description>Java classes for FHIR HL7 R4</description>
+    <url>https://github.com/mjhaugsdal/fhir-hl7-xmlstds.git</url>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+    <scm>
+        <connection>scm:git:https://github.com/mjhaugsdal/fhir-hl7-xmlstds.git</connection>
+        <url>https://github.com/mjhaugsdal/fhir-hl7-xmlstds.git</url>
+        <developerConnection>scm:git:https://github.com/mjhaugsdal/fhir-hl7-xmlstds.git</developerConnection>
+    </scm>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Markus Haugsdal</name>
+            <email>markus.haugsdal@gmail.com</email>
+            <organization>Sonat</organization>
+            <organizationUrl>https://sonat.no</organizationUrl>
+        </developer>
+    </developers>
+    <dependencies>
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
             <artifactId>jakarta.xml.bind-api</artifactId>
